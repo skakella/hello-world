@@ -1,9 +1,9 @@
 pipeline {
-  agent any
+  agent 'agent'
   stages {
     stage('build') {
       steps {
-        echo 'I am Building the code'
+        touch 'hello.txt'
       }
     }
     stage('Test'){
